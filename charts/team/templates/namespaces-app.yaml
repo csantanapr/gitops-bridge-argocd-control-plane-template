@@ -9,9 +9,9 @@ spec:
       releaseName: '{{ .Release.Name }}'
       valueFiles:
       - '../../teams/{{ .Values.prefix }}/{{ .Release.Name }}/values.yaml'
-    repoURL: 'https://github.com/gitops-bridge-dev/gitops-bridge-argocd-control-plane-template'
+    repoURL: 'https://github.com/csantanapr/gitops-bridge-argocd-control-plane-template'
     path: charts/namespaces
-    targetRevision: HEAD
+    targetRevision: demo
   destination:
     namespace: '*'
     name: {{ .Values.cluster }}
