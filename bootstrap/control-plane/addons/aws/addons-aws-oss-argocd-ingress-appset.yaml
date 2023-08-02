@@ -67,7 +67,7 @@ spec:
                 annotations:
                   eks.amazonaws.com/role-arn: {{metadata.annotations.metadata_aws_argocd_iam_role_arn}}
               service:
-                type: "LoadBalancer"
+                type: "ClusterIP"
               ingress:
                 enabled: true
                 annotations:
